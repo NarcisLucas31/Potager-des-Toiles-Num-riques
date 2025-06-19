@@ -1,0 +1,43 @@
+.sustainable-section {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.texte-subtitle {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.texte-title {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.texte-description {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  color: #444;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .texte-title {
+    font-size: 2rem;
+  }
+
+  .texte-description {
+    font-size: 1.1rem;
+  }
+}

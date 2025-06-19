@@ -1,0 +1,154 @@
+.footer {
+  background-color: #2e5c3d;
+  padding: 60px 40px 30px 40px;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-bottom: 80px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-col {
+  flex: 1;
+  margin: 0 30px;
+}
+
+.footer-col .icon {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ffffaf;
+}
+
+.footer-col h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ffffaf;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  color: #ffffaf;
+}
+
+.footer-col a {
+  color: #ffffaf;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-middle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  height: 50px;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 15px;
+}
+
+.footer-nav a {
+  color: #ffffaf;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #ffffaf;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #ffffaf;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.footer .icon svg {
+  stroke: #fff;
+  width: 24px;
+  height: 24px;
+}
+
+/* 🔽 Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .footer-col {
+    margin: 20px 0;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

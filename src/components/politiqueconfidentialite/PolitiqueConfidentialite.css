@@ -1,0 +1,45 @@
+.politique-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.politique-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.politique-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.politique-paragraph {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.politique-link {
+  color: #1a73e8;
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .politique-container {
+    padding: 16px;
+  }
+
+  .politique-title {
+    font-size: 1.6rem;
+  }
+
+  .politique-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .politique-paragraph {
+    font-size: 0.95rem;
+  }
+}

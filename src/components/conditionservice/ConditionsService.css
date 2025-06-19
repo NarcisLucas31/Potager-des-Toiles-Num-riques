@@ -1,0 +1,45 @@
+.conditions-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.conditions-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.conditions-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.conditions-paragraph {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.conditions-link {
+  color: #1a73e8;
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .conditions-container {
+    padding: 16px;
+  }
+
+  .conditions-title {
+    font-size: 1.6rem;
+  }
+
+  .conditions-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .conditions-paragraph {
+    font-size: 0.95rem;
+  }
+}

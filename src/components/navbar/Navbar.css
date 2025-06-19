@@ -1,0 +1,142 @@
+.navbar {
+  background-color: #a8d5ba;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Liens principaux */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.btn-light {
+  background-color: #a8d5ba;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #8cbfa3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-dark {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #232d3d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Burger menu (mobile) */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.line {
+  width: 24px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+.logo-img {
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* Spacer pour compenser la navbar fixe */
+body {
+  padding-top: 72px;
+}
+
+.active-link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Responsive : mobile */
+@media screen and (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 260px;
+    background-color: #a3e635;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    padding: 1rem 1.5rem;
+    box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 8px;
+    gap: 1rem;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .btn-dark {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+  }
+}
