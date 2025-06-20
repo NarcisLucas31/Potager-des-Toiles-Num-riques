@@ -1,6 +1,6 @@
 .hero-overlay {
   position: relative;
-  background-image: url("../../assets/Hero.png"); /* ou Unsplash/Pexels temporairement */
+  background-image: url("../../assets/Hero.webp"); /* ou Unsplash/Pexels temporairement */
   background-size: cover;
   background-position: center;
   min-height: 85vh;

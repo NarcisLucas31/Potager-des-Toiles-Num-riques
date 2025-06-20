@@ -1,8 +1,8 @@
 import "./Presentation.css";
 import useInView from "../../hooks/useInView";
-import imgService from "../../assets/Presentation1.png";
-import imgDesign from "../../assets/Presentation2.png";
-import imgEco from "../../assets/Presentation3.png";
+import imgService from "../../assets/Presentation1.webp";
+import imgDesign from "../../assets/Presentation2.webp";
+import imgEco from "../../assets/Presentation3.webp";
 import { Link } from "react-router-dom";
 
 const cards = [

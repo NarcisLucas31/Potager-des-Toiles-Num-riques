@@ -1,7 +1,7 @@
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/Logo.webp";
 
 function Footer() {
   return (

@@ -1,7 +1,7 @@
 import "./Contacter.css";
 import useInView from "../../hooks/useInView";
 import { Link } from "react-router-dom";
-import contactImg from "../../assets/Contact.jpg"; // ajuste le chemin selon ton dossier
+import contactImg from "../../assets/Contact.webp"; // ajuste le chemin selon ton dossier
 
 export default function Contacter() {
   const [ref, isVisible] = useInView();

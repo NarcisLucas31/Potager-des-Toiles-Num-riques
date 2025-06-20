@@ -1,5 +1,5 @@
 import "./Projet.css";
-import projet1Img from "../../assets/BolbosBTP.png"; // Ajoute tes images ici
+import projet1Img from "../../assets/BolbosBTP.webp"; // Ajoute tes images ici
 
 const projets = [
   {
