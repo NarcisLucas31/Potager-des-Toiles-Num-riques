@@ -14,7 +14,7 @@ const mailjetClient = new Mailjet({
 });
 
 app.post("/contact", async (req, res) => {
-  const { name, email, message } = req.body;
+  const { name, email, message, need } = req.body;
 
   if (!name || !email || !message) {
     return res.status(400).json({ error: "Champs requis manquants." });
@@ -37,7 +37,9 @@ app.post("/contact", async (req, res) => {
               },
             ],
             Subject: `Nouveau message de ${name}`,
-            TextPart: `Email: ${email}\n\nMessage:\n${message}`,
+            TextPart: `Email: ${email}\nBesoin: ${need}\n\nMessage:\n${
+              message || "Aucun message fourni"
+            }`,
           },
         ],
       });

@@ -1,8 +1,9 @@
 import "./Presentation.css";
-import useInView from "../../hooks/useInView"; // <- nouveau
+import useInView from "../../hooks/useInView";
 import imgService from "../../assets/Presentation1.png";
 import imgDesign from "../../assets/Presentation2.png";
 import imgEco from "../../assets/Presentation3.png";
+import { Link } from "react-router-dom";
 
 const cards = [
   {
@@ -60,8 +61,12 @@ export default function Presentation() {
         </div>
 
         <div className="presentation__buttons">
-          <button className="btn btn-primary">Contact</button>
-          <button className="btn btn--secondary">Démarrer →</button>
+          <Link to="/Contact">
+            <button className="btn btn-primary">Contact</button>{" "}
+          </Link>
+          <Link to="/Services">
+            <button className="btn btn--secondary">Démarrer →</button>
+          </Link>
         </div>
       </div>
     </section>

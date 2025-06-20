@@ -44,11 +44,14 @@ const Form = () => {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      const res = await fetch(
+        "https://potager-des-toiles-numeriques.onrender.com/contact",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        }
+      );
 
       const result = await res.json();
       if (res.ok) {

@@ -13,7 +13,7 @@ const Text = () => {
         écoresponsables.
       </p>
       <div className="button-group">
-        <Link to="/Services" className="btn btn--secondary">
+        <Link to="/Apropos" className="btn btn--secondary">
           Découvrir →
         </Link>
       </div>

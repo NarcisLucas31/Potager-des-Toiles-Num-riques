@@ -1,5 +1,5 @@
-import stackImg from "../../assets/Logo.png"; // ← adapte selon ton chemin
-import goalImg from "../../assets/Logo.png";
+import stackImg from "../../assets/Ecodesign.jpg"; // ← adapte selon ton chemin
+import goalImg from "../../assets/Pc.jpg";
 import useInView from "../../hooks/useInView";
 import "./AboutVision.css";
 

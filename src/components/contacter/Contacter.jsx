@@ -1,5 +1,8 @@
 import "./Contacter.css";
 import useInView from "../../hooks/useInView";
+import { Link } from "react-router-dom";
+import contactImg from "../../assets/Contact.jpg"; // ajuste le chemin selon ton dossier
+
 export default function Contacter() {
   const [ref, isVisible] = useInView();
 
@@ -13,11 +16,25 @@ export default function Contacter() {
             éco-responsable et efficace.
           </p>
           <div className="contact__buttons">
-            <button className="btn btn-primary">Démarrer</button>
-            <button className="btn btn--secondary">Voir</button>
+            <Link to="/Contact">
+              <button className="btn btn-primary">Démarrer</button>
+            </Link>
+            <Link to="/Projets">
+              <button className="btn btn--secondary">Voir</button>{" "}
+            </Link>
           </div>
         </div>
-        <div className="contact__image" aria-hidden="true" />
+        <div
+          className="contact__image"
+          style={{
+            backgroundImage: `url(${contactImg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            width: "100%",
+            height: "350px",
+          }}
+          aria-hidden="true"
+        />
       </div>
     </section>
   );

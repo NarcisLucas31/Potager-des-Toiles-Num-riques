@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import "./Hero.css"; // tu peux aussi utiliser styled-components ou Tailwind si tu préfères
 
 const Hero = () => {
@@ -12,8 +12,9 @@ const Hero = () => {
           l’environnement.
         </p>
         <div className="buttons">
-          <button className="btn btn-primary">Commencer</button>
-          <button className="btn btn-secondary">Contact</button>
+          <Link to="/Contact">
+            <button className="btn btn-secondary">Contact</button>
+          </Link>
         </div>
       </div>
     </section>
