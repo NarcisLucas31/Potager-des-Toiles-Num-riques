@@ -1,6 +1,7 @@
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import Logo from "../../assets/Logo.png";
 
 function Footer() {
   return (
@@ -43,7 +44,7 @@ function Footer() {
 
       <div className="footer-middle">
         <div className="footer-logo">
-          <img src="/src/assets/Logo.png" alt="Logo" />
+          <img src={Logo} alt="Logo" />
         </div>
         <nav className="footer-nav">
           <Link to="/Contact">Contactez-nous</Link>
